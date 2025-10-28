@@ -1,0 +1,44 @@
+/*
+ * ==============================================================
+ * 针对 MPE 的表格美化方案 (传统网格线样式)
+ * ==============================================================
+ */
+
+// [保留] 强制移除 MPE 为表格添加的所有外层包裹元素的边框
+// 这是解决“最右侧一道杠”的关键！
+.mume.table-wrap,
+.mume.table-wrap > div {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+// 针对 MPE 预览器内部的 Markdown 表格内容
+.markdown-preview.markdown-preview {
+
+    // --- 表格整体样式 ---
+    table {
+        width: 100% !important;
+        border-collapse: collapse !important; // 合并单元格边框，这是清晰网格的关键
+        margin-bottom: 1.5em !important;
+    }
+
+    // --- 表头样式 ---
+    th {
+        font-weight: bold !important;
+        background-color: #f7f7f7 !important;
+        text-align: center !important;
+    }
+
+    // --- 表头和单元格的通用样式 ---
+    // [核心修改] 将样式从只有底部横线，改回四边都有框线
+    th, td {
+        padding: 12px 15px !important;
+        border: 1px solid #797575 !important; // 为每个单元格添加 1 像素的浅灰色边框
+    }
+    h1{
+        // 文字居中
+        text-align: center;
+    }
+}
