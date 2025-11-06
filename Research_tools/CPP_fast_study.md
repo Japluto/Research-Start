@@ -171,7 +171,7 @@ C++ 是C的超集，你所有的C语言知识（循环、判断、函数、指�
       - **使用方式**：
         1.  **方式一 (推荐)**：在代码开头使用 `using namespace std;`。
         2.  **方式二 (更规范)**：每次使用时都明确指定领地 `std::cout << "Hello";`。
-        3.  **方式三 (折衷)**：只声明你需要的 `using std::cout; using std::cin;`。
+        3.  **方式三 (折中)**：只声明你需要的 `using std::cout; using std::cin;`。
 
     <!-- end list -->
 
@@ -354,7 +354,7 @@ int main() {
 #### 1\. 什么是类 (Class)？
 
   - **定义**：类 (Class) 是 C 语言 `struct` 的超级升级版。
-  - **C 的 `struct`**：只能\*\*“打包”数据\*\*（变量）。
+  - **C 的 `struct`**：只能 **“打包”数据**（变量）。
   - **C++ 的 `class`**：既能打包**数据**（称为 **数据成员** 或 **属性**），也能打包**函数**（称为 **成员函数** 或 **方法**）。
   - **C++ 的 `struct` vs `class`**：
       - 在 C++ 中，`struct` 几乎等同于 `class`，它也可以有成员函数。
@@ -490,7 +490,7 @@ int main() {
           - `double height;`
     2.  **成员函数 (公有 `public`)**：
           - `void set_data(double l, double w, double h);` // 用来设置长宽高
-          - `double get_volume();` // 用来计算并返回体积 (长 \* 宽 \* 高)
+          - `double get_volume();` // 用来计算并返回体积 (长 * 宽 * 高)
           - `void display();` // 用来在屏幕上输出 "Box volume: [体积]"
   - **提示**：
     1.  在 `get_volume()` 函数中，你可以直接访问 `length`, `width`, `height`。
