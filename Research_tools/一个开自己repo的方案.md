@@ -10,3 +10,7 @@ git remote remove origin
 git remote add origin https://github.com/你的用户名/GridMM.git
 git branch -M main
 git push -u origin main
+
+git remote add origin https://github.com/Japluto/gridmm_my.git
+git branch -M main
+git push -u origin main

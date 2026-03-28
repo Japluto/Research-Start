@@ -17,7 +17,7 @@ The board comes pre-installed with Betaflight. Before PX4 firmware can be instal
 在命令行中键入以下代码：
 
 ```bash
-git clone --recursive https://github.com/PX4/PX4-Autopilot.git
+git clone --recursive https://gith**************************************************ub.com/PX4/PX4-Autopilot.git
 ```
 
 如果 clone 过程没有任何错误，直接进行下一步；否则，可考虑运行
